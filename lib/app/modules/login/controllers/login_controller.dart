@@ -18,6 +18,7 @@ class LoginController extends GetxController {
   @override
   void onInit() {
     super.onInit();
+
   }
 
   @override

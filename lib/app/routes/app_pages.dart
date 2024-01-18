@@ -33,16 +33,37 @@ class AppPages {
       name: _Paths.BOOK,
       page: () => const BookView(),
       binding: BookBinding(),
+      children: [
+        GetPage(
+          name: _Paths.BOOK,
+          page: () => const BookView(),
+          binding: BookBinding(),
+        ),
+      ],
     ),
     GetPage(
       name: _Paths.ADD_BOOK,
       page: () => const AddBookView(),
       binding: AddBookBinding(),
+      children: [
+        GetPage(
+          name: _Paths.ADD_BOOK,
+          page: () => const AddBookView(),
+          binding: AddBookBinding(),
+        ),
+      ],
     ),
     GetPage(
       name: _Paths.PEMINJAMAN,
       page: () => const PeminjamanView(),
       binding: PeminjamanBinding(),
+      children: [
+        GetPage(
+          name: _Paths.PEMINJAMAN,
+          page: () => const PeminjamanView(),
+          binding: PeminjamanBinding(),
+        ),
+      ],
     ),
   ];
 }

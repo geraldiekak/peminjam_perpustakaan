@@ -1,3 +1,5 @@
+import 'package:peminjam_perpustakaan_app/app/data/provider/storage_provider.dart';
+
 class Endpoint {
   static const String baseUrlApi = "https://api-perpustakaan.abadjayasenantiasa.com/api/v1/user/";
 
